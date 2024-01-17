@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: white;
+            background-color: black;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        section {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: white;
+            color: black;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Search Page</h1>
+    </header>
+
+    <section>
+        <label for="keyword">Keyword:</label>
+        <input type="text" id="keyword" name="keyword">
+
+        <label for="filter">Filter:</label>
+        <select id="filter" name="filter">
+            <option value="all">All Categories</option>
+            <option value="products">Products</option>
+            <option value="designs">Designs</option>
+            <option value="community">Community</option>
+            <!-- Add more categories as needed -->
+        </select>
+
+        <label for="price">Price Range:</label>
+        <input type="text" id="price" name="price" placeholder="e.g., $10 - $50">
+
+        <button onclick="performSearch()">Search</button>
+    </section>
+
+    <section>
+        <!-- Display search results here -->
+    </section>
+
+    <script>
+        function performSearch() {
+            // Implement search logic here
+            // Retrieve values from filters (document.getElementById("keyword").value, etc.)
+            // Display search results in the results section
+            // You can use AJAX to fetch results from a server or perform client-side filtering
+        }
+    </script>
+
+</body>
+</html>
