@@ -1,0 +1,492 @@
+body, div, h1, h2, h3, h4, h5, h6, p, li, ul, ol, dl, dt, dd, img, form, fieldset, blockquote {
+margin: 0; 
+padding: 0; 
+border: 0; 
+background-image:url(../images/background.png);
+background-color:#000;
+background-position: 0px -130px;
+}
+
+body {
+font-family:Arial, Helvetica, sans-serif;	
+font-size:13px;
+}
+
+h1 {
+font-family:Rockwell;
+font-size:18px;
+color:#666666;	
+}
+
+p {
+font-family:Arial, Helvetica, sans-serif;	
+font-size:13px;
+color:#666666;	
+margin-bottom:30px;
+}
+
+a {
+font-family:Arial;
+font-size:15px;
+text-transform:uppercase;
+}
+	   
+a:link { text-decoration: none; color:#FFF } 
+a:visited { text-decoration: none; color: #FFF }
+a:hover { color:#FFF; text-decoration: none }
+a:active { text-decoration: none; color: #930 } 
+
+#overlay {
+	position: absolute; /* Sit on top of the page content */
+	display: none; /* Hidden by default */
+	/*width: 100%; /* Full width (cover the whole page) */
+	/*height: 100%; /* Full height (cover the whole page) */
+	top: 144px;
+	left: 15px;
+	background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+	z-index: 200; /* Specify a stack order in case you're using a different order for other elements */
+	cursor: pointer; /* Add a pointer on hover */
+  }
+
+#container {
+	margin: 0 auto;
+	width:1020px;	
+	margin-top:20px;
+	position: relative;
+}
+
+#inner {
+	width:800px;	
+	margin: 0 auto;
+	float:left;
+	background-image:none;
+	background-color:transparent;
+}
+
+#logo {
+	float:left;
+}
+
+#nav {
+	float: right;
+	margin-bottom: 0px;
+	padding-right: 30px;
+	padding-top: 30px;
+}
+
+#nav ul li {
+	display: inline;
+	float: left;
+	margin-top: 10px;
+	margin-bottom:20px;
+	margin-right:40px;
+	color:#09F;
+}
+
+.divider {
+	width:931px;
+	height:8px;
+	float:left;
+	margin:0px 0px 0px 0px;
+	/* background:url(../images/bar.png) no-repeat;*/
+}
+
+.divider img {
+	margin-left:auto;
+	margin-right:auto;
+	display:block;		
+}
+
+.structure {
+	width:150px;
+	float:left;	
+	margin:15px;
+	margin-bottom:0px;
+}
+
+.structure_wide {
+	width:900px;
+	height:540px;
+	float:left;	
+	margin-top:0px;
+	margin-left:15px; 
+	
+}
+
+#home_surround {
+	float:left;
+	background-image:none;
+	background-color:transparent;
+
+}
+
+#home_page_div {
+	background-image: url(../images/wood_red.jpg);
+	width: 800px;
+	height: 551px;
+}
+
+#shopping_page_div {
+	background-image: url(../images/wood_orange_wide.jpg);
+	width: 800px;
+	height: 551px;
+}
+
+#community_page_div {
+	background-image: url(../images/wood_yellow_wide.jpg);
+	width: 800px;
+	height: 551px;
+}
+
+#designs_page_div {
+	background-image: url(../images/wood_green_wide.jpg);
+	width: 800px;
+	height: 550px;
+}
+
+#contact_page_div, #about_page_div, #cart_page_div, #search_page_div, #profile_page_div {
+	background-image: none;
+	background-color: black;
+	color: white;
+	width: 800px;
+	height: 552px;
+	border: 1px solid white;
+}
+
+#home {
+	float:left;
+	background-image:none;
+	background-color:transparent;
+}
+
+#home a:link {color:red; text-decoration: none;}
+#home a:visited {color:red; text-decoration: none;}
+#home a:hover {color:pink;}
+#home a:hover img {
+	border: 0px; 
+	border-color: pink;
+	border-style: solid;
+	}
+#home a:active {color:red;}
+
+#home_reflection {
+	float:left;
+}
+
+#shopping_surround {
+	float:left;
+	background-image:none;
+	background-color:transparent;
+}
+
+#shopping {
+	float:left;
+	background-image:none;
+	background-color:transparent;
+}
+
+#shopping a:link {color:orange; text-decoration: none;}
+#shopping a:visited {color:orange; text-decoration: none;}
+#shopping a:hover {color:#FC3;}
+#shopping a:hover img {
+	border: 0px; 
+	border-color: #FC3;
+	border-style: solid;
+	}
+#shopping a:active {
+	color:orange;
+	}
+
+#shopping {
+	float:left;
+}
+
+#community_surround {
+	float:left;
+	background-image:none;
+	background-color:transparent;
+}
+
+#community_surround_page {
+	background-image:url(../images/wood_yellow_wide.jpg);
+	
+}
+
+#community_surround_page div {
+	background-color:transparent;
+}
+
+#community_surround_page p {
+	font-size:18px; 
+	margin:5px;
+	background-color:transparent;
+	color:#000;
+}
+
+#community {
+	float:left;
+	background-image:none;
+	background-color:transparent;
+}
+
+#community a:link {color:yellow; text-decoration: none;}
+#community a:visited {color:yellow; text-decoration: none;}
+#community a:hover {color:lightyellow;}
+#community a:hover img {
+	border: 0px; 
+	border-color: lightyellow;
+	border-style: solid;
+	}
+#community a:active {color:yellow;}
+
+#community_reflection {
+	float:left;
+}
+
+#designs_surround {
+	float:left;
+	background-image:none;
+	background-color:transparent;
+}
+
+#designs_surround_page {
+	background-image:url(../images/wood_green_wide.jpg);
+}
+
+#designs_surround_page div {
+	background-color:transparent;
+}
+
+#designs_surround_page p {
+	font-size:18px; 
+	margin:5px;
+	background-color:transparent;
+	color:#000;
+}
+
+#designs {
+	float:left;
+	background-image:none;
+	background-color:transparent;
+}
+
+#designs a:link {color:green; text-decoration: none;}
+#designs a:visited {color:green; text-decoration: none;}
+#designs a:hover {color:lightgreen;}
+#designs a:hover img {
+	border: 0px; 
+	border-color: lightgreen;
+	border-style: solid;
+	}
+#designs a:active {color:green;}
+
+#designs_reflection {
+	float:left;
+}
+
+#dogcrates_surround {
+	float:left;
+	background-image:none;
+	background-color:transparent;
+}
+
+#dogcrates_surround_page {
+	background-image:url(../images/wood_blue_wide.jpg);
+}
+
+#dogcrates_surround_page div {
+	background-color:transparent;
+}
+
+#dogcrates_surround_page p {
+	font-size:18px; 
+	margin:5px;
+	background-color:transparent;
+	color:#000;
+}
+
+#dogcrates {
+	float:left;
+	background-image:none;
+}
+
+#dogcrates a:link {color:#09f; text-decoration: none;}
+#dogcrates a:visited {color:#09f; text-decoration: none;}
+#dogcrates a:hover {color:lightblue;}
+#dogcrates a:hover img {
+	border: 0px; 
+	border-color: lightblue;
+	border-style: solid;
+	}
+#dogcrates a:active {color:#09f;}
+
+#dogcrates_reflection {
+	float:left;
+}
+
+#cuttingboards_surround {
+	float:left;
+	background-image:none;
+	background-color:transparent;
+}
+
+#cuttingboards_surround_page {
+	background-image:url(../images/wood_violet_wide.jpg);
+}
+
+#cuttingboards_surround_page div {
+	background-color:transparent;
+}
+
+#cuttingboards_surround_page p {
+	font-size:18px; 
+	margin:5px;
+	background-color:transparent;
+	color:#000;
+}
+
+#cuttingboards {
+	float:left;
+	background-image:none;
+	background-color:transparent;
+}
+
+#cuttingboards a:link {color:#93c; text-decoration: none;}
+#cuttingboards a:visited {color:#93c; text-decoration: none;}
+#cuttingboards a:hover {color:violet;}
+#cuttingboards a:hover img {
+	border: 0px; 
+	border-color: violet;
+	border-style: solid;
+	}
+#cuttingboards a:active {color:#93c;}
+
+#cuttingboards_reflection {
+	float:left;
+}
+
+img {
+    border-style:none;
+}
+
+#bottomnav {
+	margin-top:20px;	
+	float:left;	
+}
+
+#bottomnav ul li {
+	display: inline;
+	float: left;
+	margin-top: 10px;
+	margin-bottom:20px;
+	margin-right:20px;
+}
+
+#bottomnav a {
+	margin-left:16px;	
+}
+
+
+#social {
+	margin-top:20px;	
+	float:right;
+	margin-right:20px;	
+}
+
+#social ul li {
+	display: inline;
+	float: right;
+	margin-top: 10px;
+	margin-bottom:20px;
+	margin-right:20px;
+}
+
+#social p {
+	float:right;
+	margin-top: 10px;
+	margin-bottom:20px;
+	margin-right:20px;
+	margin-left:300px;
+}
+
+
+/* community Pictures */
+.community_class {
+	margin:30px;
+	background-color:transparent;
+}
+
+#community1 {
+	float:left;
+	width:100px;
+	height:100px;
+}
+#community2 {
+	float:left;
+	width:100px;
+	height:100px;
+	
+}
+#community3 {
+	width:100px;
+	height:100px;
+	float:left;
+}
+#community4 {
+	width:100px;
+	height:100px;
+	float:left;
+}
+
+#community5 {
+	float:left;
+	width:100px;
+	height:100px;
+}
+
+#community6 {
+	float:left;
+	width:100px;
+	height:100px;
+}
+
+#community_Display_icons {
+	float:left;
+	width:350px;
+	height:500px;
+	background-color:transparent;
+	background-image:none;
+}
+
+#community_Display {
+	float:left;
+	text-align:center;
+	width:450px;
+	height:450px;
+	margin:0px;
+	margin-left:40px;
+	background-color:transparent;
+	background-image:none;
+}
+
+#community_Display_Text {
+	float:left;
+	text-align:center;
+	width:450px;
+	height:50px;
+	margin:0px;
+	margin-left:40px;
+	background-color:transparent;
+	background-image:none;
+}
+
+#gallery_info {
+	background-color:transparent;
+	background-image:none;
+	float:left;
+	width:880px;
+	height:600px;
+	margin:10px;
+}
+
+</style>
