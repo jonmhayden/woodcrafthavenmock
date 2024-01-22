@@ -1,10 +1,53 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="css/stylesheet.css" type="text/css" media="screen" />
-    </head>
-    <body>
-        <div id="designs_page_div">
-            <font color="white">Designs</font>Designs
-        </div>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Items</title>
+    <style>
+        #downloadList body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+            background-image: none;
+        }
+        #downloadList h2 {
+            background-color: transparent;
+            background-image: none;
+            color: white;
+            padding: 50px;
+        }
+        #downloadList {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: transparent;
+            background-image: none;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .download-item {
+            margin-bottom: 10px;
+            background-color: transparent;
+            background-image: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="designs_page_div">
+<div id="downloadList">
+    <h2>Top Designs to choose from:</h2>
+
+    <div class="download-item">
+        <a href="pages/designs/item1.jpeg" download>Design Plan 1</a>
+    </div>
+
+    <div class="download-item">
+        <a href="pages/designs/item2.jpeg" download>Design Plan 2</a>
+    </div>
+
+</div>
+</div>
+</body>
 </html>

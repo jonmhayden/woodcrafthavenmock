@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" media="screen" />
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+<style>
+#cart_div, #productList {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: yellow;
+            background-image: none;
+            background-color: transparent;
+        }
+#cartList, #cart_para, #cart_header, #cart {
+    color: white;
+    background-image: none;
+    background-color: transparent;
+}
+#cartList li {
+    color: white;
+    background-image: none;
+    background-color: transparent;
+}
 
-  <body>
+input, h3 {
+    color: black;
+    background-image: none;
+    background-color: transparent;
+}
+button {
+    color: black;
+    background-image: none;
+    background-color: #B76106;
+}
+.productItem {
+    color: white;
+    background-image: none;
+    background-color: transparent;
+}
+</style>
+</head>
+<body onload="printProducts();">
+    
     <div id="cart_page_div">
-Cart page
+        
+        <div id="cart_div">
+            <input type="file" id="csvFileInput" accept=".csv" onclick="printProducts();">
+    <div id="cart">
+      <h3 id="cart_header">My Cart</h3>
+      <ul id="cartList"></ul>
+      <p id="cart_para">Total: $<span id="totalAmount">0.00</span></p>
     </div>
-  </body>
+    <div id="productList">Available Products</div>
+    </div>
+</div>
+</body>
 </html>
