@@ -119,3 +119,73 @@ function submitMessage() {
         alert('Please enter both name and message.');
     }
 }
+
+function searchCSV() {
+    const fileInput = document.getElementById('csvFileInput');
+    const keywordInput = document.getElementById('keyword');
+    const resultsDiv = document.getElementById('searchResults');
+    const filter = document.getElementById('filter').value;
+    const priceRange = document.getElementById('price').value.split("-");
+    console.log("price is " + priceRange);
+
+    const file = fileInput.files[0];
+    const keyword = keywordInput.value.toLowerCase();
+
+    if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+            const contents = e.target.result;
+            const lines = contents.split('\n');
+
+            // Clear previous results
+            resultsDiv.innerHTML = '';
+
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i].toLowerCase();
+                const lineList = line.split(',');
+                const name = String(lineList[0]).toLowerCase();
+                const category = String(lineList[1]).toLowerCase();
+                const price = lineList[2];
+                if (line.includes(keyword)) {
+                    const resultItem = document.createElement('div');
+                    if (filter == "all") {
+                        if (priceRange.length == 2) {
+                            if (price >= priceRange[0] && price <= priceRange[1]) {
+                                resultItem.textContent = lines[i];
+                                resultsDiv.appendChild(resultItem);
+                            }
+                        } else {
+                            resultItem.textContent = lines[i];
+                            resultsDiv.appendChild(resultItem);
+                        }
+                    } else {
+                        if (filter == "name" && name.includes(keyword)) {
+                            if (priceRange.length == 2) {
+                                if (price >= priceRange[0] && price <= priceRange[1]) {
+                                    resultItem.textContent = lines[i];
+                                    resultsDiv.appendChild(resultItem);
+                                }
+                            } else {
+                                resultItem.textContent = lines[i];
+                                resultsDiv.appendChild(resultItem);
+                            }
+                        } else if (filter == "category" && category.includes(keyword)) {
+                            if (priceRange.length == 2) {
+                                if (price >= priceRange[0] && price <= priceRange[1]) {
+                                    resultItem.textContent = lines[i];
+                                    resultsDiv.appendChild(resultItem);
+                                }
+                            } else {
+                                resultItem.textContent = lines[i];
+                                resultsDiv.appendChild(resultItem);
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        reader.readAsText(file);
+    }
+}

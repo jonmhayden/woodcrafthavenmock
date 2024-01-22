@@ -15,7 +15,7 @@
         p {
           color: white;
         }
-        #search_header {
+        #search_div h1 {
             text-align: center;
             color: white;
             padding: 20px;
@@ -42,6 +42,8 @@
         }
         #search_div {
           padding-left: 20px;
+          background-color: black;
+          background-image: none;
         }
     </style>
 </head>
@@ -51,6 +53,8 @@
     <header>
         <h1 id="search_header">Search Page</h1>
     </header>
+    
+    <input type="file" id="csvFileInput" accept=".csv">
 
     <section>
         <label for="keyword">Keyword:</label>
@@ -59,31 +63,18 @@
         <label for="filter">Filter:</label>
         <select id="filter" name="filter">
             <option value="all">All Categories</option>
-            <option value="products">Products</option>
-            <option value="designs">Designs</option>
-            <option value="community">Community</option>
-            <!-- Add more categories as needed -->
+            <option value="name">Name</option>
+            <option value="category">Tool Category</option>
         </select>
 
         <label for="price">Price Range:</label>
         <input type="text" id="price" name="price" placeholder="e.g., $10 - $50">
         <br>
 
-        <button onclick="performSearch()">Search</button>
+        <button onclick="searchCSV()">Search</button>
     </section>
-
-    <section>
-        <!-- Display search results here -->
-    </section>
-
-    <script>
-        function performSearch() {
-            // Implement search logic here
-            // Retrieve values from filters (document.getElementById("keyword").value, etc.)
-            // Display search results in the results section
-            // You can use AJAX to fetch results from a server or perform client-side filtering
-        }
-    </script>
+    <h1>Search Results</h1>
+    <div id="searchResults"></div>
   </div>
 </div>
 </body>
