@@ -1,10 +1,65 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="css/stylesheet.css" type="text/css" media="screen" />
-    </head>
-    <body>
-        <div id="community_page_div">
-            <font color="white">Hello</font>Hello
-        </div>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Board</title>
+    <style>
+        #comm_body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: none;
+        }
+        #messageBoard {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: none;
+        }
+        #messages {
+            list-style-type: none;
+            padding: 0;
+            background-image: none;
+            background-color: transparent;
+        }
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: transparent;
+            border-radius: 5px;
+            background-image: none;
+            color: black;
+        }
+        #comm_input, #comm_header, #messageForm, strong {
+            background-color: transparent;
+            background-image: none;
+            color: black;
+        }
+    </style>
+</head>
+<body id="comm_body">
+    <div id="community_page_div">
+<div id="messageBoard">
+    <h2 id="comm_header">Message Board</h2>
+
+    <form id="messageForm">
+        <label id="comm_input" for="userName">Name:</label>
+        <input type="text" id="userName" required>
+
+        <label for="userMessage">Message:</label>
+        <textarea id="userMessage" rows="4" required></textarea>
+
+        <button type="button" onclick="submitMessage()">Submit</button>
+    </form>
+
+    <ul id="messages"></ul>
+</div>
+</div>
+
+</body>
 </html>

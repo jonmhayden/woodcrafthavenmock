@@ -1,11 +1,56 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="css/stylesheet.css" type="text/css" media="screen" />
-    </head>
-    <body>
-        <div id="shopping_page_div">
-            <font color="white">goodbye</font>goodbye
-            
-        </div>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+<style>
+#shopping_div, #productList {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: yellow;
+            background-image: none;
+            background-color: transparent;
+        }
+#cartList, #shopping_para, #shopping_header, #cart {
+    color: black;
+    background-image: none;
+    background-color: transparent;
+}
+input, h3 {
+    color: black;
+    background-image: none;
+    background-color: transparent;
+}
+button {
+    color: black;
+    background-image: none;
+    background-color: #B76106;
+}
+.productItem {
+    color: black;
+    background-image: none;
+    background-color: transparent;
+}
+</style>
+</head>
+<body onload="printProducts();">
+    
+    <div id="shopping_page_div">
+        
+        <div id="shopping_div">
+            <input type="file" id="csvFileInput" accept=".csv" onclick="printProducts();">
+    <div id="cart">
+      <h3 id="shopping_header">Shopping Cart</h3>
+      <ul id="cartList"></ul>
+      <p id="shopping_para">Total: $<span id="totalAmount">0.00</span></p>
+    </div>
+    <div id="productList">Available Products</div>
+
+
+
+    </div>
+</div>
+</body>
 </html>
