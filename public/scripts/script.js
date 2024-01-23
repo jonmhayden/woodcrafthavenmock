@@ -189,3 +189,22 @@ function searchCSV() {
         reader.readAsText(file);
     }
 }
+
+function submitForm(event) {
+    event.preventDefault(); // Prevents the form from submitting and refreshing the page
+
+    // Clear form fields
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+
+    // Display a popup
+    alert("Thank You! Form submitted successfully!");
+}
+
+function submitCart(event) {
+    event.preventDefault(); // Prevents the form from submitting and refreshing the page
+
+    // Display a popup
+    alert("Cart submitted successfully!");
+}
