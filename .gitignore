@@ -1,1 +1,3 @@
 node_modules
+receipt*
+.DS_Store
